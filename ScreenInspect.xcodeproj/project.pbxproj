@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD0085A32BEF7E3A000DFDEC /* ColorTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0085A22BEF7E3A000DFDEC /* ColorTestViewController.swift */; };
+		DD0085A52BEFA093000DFDEC /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0085A42BEFA093000DFDEC /* MyCollectionViewCell.swift */; };
 		DD1000EF2BED5A8D00EBEBF9 /* TextTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1000EE2BED5A8D00EBEBF9 /* TextTestViewController.swift */; };
 		DD18C1682BEBC00200E7B59B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD18C1672BEBC00200E7B59B /* AppDelegate.swift */; };
 		DD18C16A2BEBC00200E7B59B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD18C1692BEBC00200E7B59B /* SceneDelegate.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD0085A22BEF7E3A000DFDEC /* ColorTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTestViewController.swift; sourceTree = "<group>"; };
+		DD0085A42BEFA093000DFDEC /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		DD1000EE2BED5A8D00EBEBF9 /* TextTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTestViewController.swift; sourceTree = "<group>"; };
 		DD18C1642BEBC00200E7B59B /* ScreenInspect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenInspect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD18C1672BEBC00200E7B59B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				DD18C16B2BEBC00200E7B59B /* ViewController.swift */,
 				DD71F5302BED2D8A00A01D79 /* IntroViewController.swift */,
 				DD1000EE2BED5A8D00EBEBF9 /* TextTestViewController.swift */,
+				DD0085A22BEF7E3A000DFDEC /* ColorTestViewController.swift */,
+				DD0085A42BEFA093000DFDEC /* MyCollectionViewCell.swift */,
 				DD71F5252BECE97500A01D79 /* ActionRowView.swift */,
 				DD71F52E2BED281100A01D79 /* Extension.swift */,
 				DD779BFF2BEE6060007D514C /* CustomGotItButton.swift */,
@@ -165,11 +171,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD0085A32BEF7E3A000DFDEC /* ColorTestViewController.swift in Sources */,
 				DD779C002BEE6060007D514C /* CustomGotItButton.swift in Sources */,
 				DD71F52F2BED281100A01D79 /* Extension.swift in Sources */,
 				DD18C16C2BEBC00200E7B59B /* ViewController.swift in Sources */,
 				DD18C1682BEBC00200E7B59B /* AppDelegate.swift in Sources */,
 				DD71F5312BED2D8A00A01D79 /* IntroViewController.swift in Sources */,
+				DD0085A52BEFA093000DFDEC /* MyCollectionViewCell.swift in Sources */,
 				DD18C16A2BEBC00200E7B59B /* SceneDelegate.swift in Sources */,
 				DD71F5262BECE97500A01D79 /* ActionRowView.swift in Sources */,
 				DD1000EF2BED5A8D00EBEBF9 /* TextTestViewController.swift in Sources */,

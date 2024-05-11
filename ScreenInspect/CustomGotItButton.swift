@@ -10,26 +10,20 @@ import Foundation
 import UIKit
 
 class CustomGotItButton: UIButton {
-
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//        setupButton()
-//        
-//    }
-
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
         setupButton()
-       // fatalError("init(coder:) has not been implemented")
-        
     }
-
+    
     private func setupButton() {
-        backgroundColor = .red
-        layer.cornerRadius = 6
+        backgroundColor = UIColor(red: 0.0/255.0, green: 160.0/255.0, blue: 228.0/255.0, alpha: 1.0)
+        layer.cornerRadius = 8
         titleLabel?.font = UIFont.systemFont(ofSize: 12, weight: .bold)
         setTitleColor(.white, for: .normal)
         setTitle("Got it", for: .normal)
-        frame = CGRect(x: 0, y: 0, width: 120, height: 40)
+        setTitleColor(.white, for: .highlighted)
     }
+    
 }
+

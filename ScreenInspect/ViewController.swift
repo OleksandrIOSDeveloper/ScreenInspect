@@ -47,10 +47,9 @@ class ViewController: UIViewController {
         }
         textTestView.completion = {
             self.performSegue(withIdentifier: "TextTestViewController", sender: self)
-            print("222")
         }
         colorTestView.completion = {
-            print("3333")
+            self.performSegue(withIdentifier: "ColorTestViewController", sender: self)
         }
         introductionView.completion = {
             self.performSegue(withIdentifier: "IntroViewController", sender: self)
