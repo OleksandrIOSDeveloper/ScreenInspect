@@ -22,6 +22,7 @@
 		DD71F52F2BED281100A01D79 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD71F52E2BED281100A01D79 /* Extension.swift */; };
 		DD71F5312BED2D8A00A01D79 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD71F5302BED2D8A00A01D79 /* IntroViewController.swift */; };
 		DD779C002BEE6060007D514C /* CustomGotItButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD779BFF2BEE6060007D514C /* CustomGotItButton.swift */; };
+		DDDDE2C02BF663FF001A3BFE /* DetailColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDE2BF2BF663FF001A3BFE /* DetailColorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		DD71F52E2BED281100A01D79 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		DD71F5302BED2D8A00A01D79 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		DD779BFF2BEE6060007D514C /* CustomGotItButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGotItButton.swift; sourceTree = "<group>"; };
+		DDDDE2BF2BF663FF001A3BFE /* DetailColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailColorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,12 +76,13 @@
 		DD18C1662BEBC00200E7B59B /* ScreenInspect */ = {
 			isa = PBXGroup;
 			children = (
-				DD18C1672BEBC00200E7B59B /* AppDelegate.swift */,
 				DD18C1692BEBC00200E7B59B /* SceneDelegate.swift */,
 				DD18C16B2BEBC00200E7B59B /* ViewController.swift */,
+				DD18C1672BEBC00200E7B59B /* AppDelegate.swift */,
 				DD71F5302BED2D8A00A01D79 /* IntroViewController.swift */,
 				DD1000EE2BED5A8D00EBEBF9 /* TextTestViewController.swift */,
 				DD0085A22BEF7E3A000DFDEC /* ColorTestViewController.swift */,
+				DDDDE2BF2BF663FF001A3BFE /* DetailColorViewController.swift */,
 				DD0085A42BEFA093000DFDEC /* MyCollectionViewCell.swift */,
 				DD71F5252BECE97500A01D79 /* ActionRowView.swift */,
 				DD71F52E2BED281100A01D79 /* Extension.swift */,
@@ -176,6 +179,7 @@
 				DD71F52F2BED281100A01D79 /* Extension.swift in Sources */,
 				DD18C16C2BEBC00200E7B59B /* ViewController.swift in Sources */,
 				DD18C1682BEBC00200E7B59B /* AppDelegate.swift in Sources */,
+				DDDDE2C02BF663FF001A3BFE /* DetailColorViewController.swift in Sources */,
 				DD71F5312BED2D8A00A01D79 /* IntroViewController.swift in Sources */,
 				DD0085A52BEFA093000DFDEC /* MyCollectionViewCell.swift in Sources */,
 				DD18C16A2BEBC00200E7B59B /* SceneDelegate.swift in Sources */,

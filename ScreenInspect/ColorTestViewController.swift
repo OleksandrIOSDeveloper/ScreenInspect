@@ -8,37 +8,29 @@
 import UIKit
 
 class ColorTestViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-
+    
+    var arrayColorsHex = ["#FF0000", "#00FF01", "#0000FE", "#FFFF01", "#01FFFF", "#FF00FE", "#010101", "#FFFFFF", "gradient"]
+    let reuseIdentifier = "cell"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
-
-    let reuseIdentifier = "cell"
-    var items = ["red", "green", "blue", "yellow", "light blue", "pink", "black", "white", "gradient"]
-    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.items.count
+        return arrayColorsHex.count
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! MyCollectionViewCell
-        
-        // Use the outlet in our custom class to get a reference to the UILabel in the cell
-        cell.colorImageView.image = UIImage(named: self.items[indexPath.row])// The row value is the same as the index of the desired text within the array.
-        //cell.backgroundColor = UIColor.cyan // make cell more visible in our example project
-        
+        cell.setupCell(with: arrayColorsHex[indexPath.row])
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        print("You selected cell #\(indexPath.item)!")
+        print("You selected cell #\(arrayColorsHex[indexPath.row])")
     }
-
+    
     @IBAction func backButton(_ sender: Any) {
         dismiss(animated: false)
     }

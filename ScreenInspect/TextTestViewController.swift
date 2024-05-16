@@ -16,7 +16,7 @@ class TextTestViewController: UIViewController {
         
         // Create a UIScrollView for scrolling the content
         let scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height))
-        scrollView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        scrollView.autoresizingMask = [.flexibleWidth]
         mainContentView.addSubview(scrollView)
         // Add content to the UIScrollView
         var yOffset: CGFloat = 0
