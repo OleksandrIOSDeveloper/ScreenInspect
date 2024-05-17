@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ColorTestViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class ColorTestViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     var arrayColorsHex = ["#FF0000", "#00FF01", "#0000FE", "#FFFF01", "#01FFFF", "#FF00FE", "#010101", "#FFFFFF", "gradient"]
     let reuseIdentifier = "cell"
@@ -28,12 +28,16 @@ class ColorTestViewController: UIViewController, UICollectionViewDataSource, UIC
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("You selected cell #\(arrayColorsHex[indexPath.row])")
+        
+        if let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailColorViewController") as? DetailColorViewController {
+            detailVC.modalPresentationStyle = .fullScreen
+            detailVC.setupUI(with: arrayColorsHex[indexPath.row])
+            self.present(detailVC, animated: true, completion: nil)
+        }
     }
     
     @IBAction func backButton(_ sender: Any) {
         dismiss(animated: false)
     }
-    
     
 }

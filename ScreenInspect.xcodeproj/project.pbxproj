@@ -76,13 +76,9 @@
 		DD18C1662BEBC00200E7B59B /* ScreenInspect */ = {
 			isa = PBXGroup;
 			children = (
+				DD742A492BF7EF0700FA7D14 /* View Controllers */,
 				DD18C1692BEBC00200E7B59B /* SceneDelegate.swift */,
-				DD18C16B2BEBC00200E7B59B /* ViewController.swift */,
 				DD18C1672BEBC00200E7B59B /* AppDelegate.swift */,
-				DD71F5302BED2D8A00A01D79 /* IntroViewController.swift */,
-				DD1000EE2BED5A8D00EBEBF9 /* TextTestViewController.swift */,
-				DD0085A22BEF7E3A000DFDEC /* ColorTestViewController.swift */,
-				DDDDE2BF2BF663FF001A3BFE /* DetailColorViewController.swift */,
 				DD0085A42BEFA093000DFDEC /* MyCollectionViewCell.swift */,
 				DD71F5252BECE97500A01D79 /* ActionRowView.swift */,
 				DD71F52E2BED281100A01D79 /* Extension.swift */,
@@ -94,6 +90,18 @@
 				DD18C1752BEBC00400E7B59B /* Info.plist */,
 			);
 			path = ScreenInspect;
+			sourceTree = "<group>";
+		};
+		DD742A492BF7EF0700FA7D14 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD18C16B2BEBC00200E7B59B /* ViewController.swift */,
+				DD71F5302BED2D8A00A01D79 /* IntroViewController.swift */,
+				DD1000EE2BED5A8D00EBEBF9 /* TextTestViewController.swift */,
+				DD0085A22BEF7E3A000DFDEC /* ColorTestViewController.swift */,
+				DDDDE2BF2BF663FF001A3BFE /* DetailColorViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

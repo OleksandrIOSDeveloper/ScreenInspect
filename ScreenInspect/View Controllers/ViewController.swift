@@ -9,8 +9,8 @@ import UIKit
 import DeviceKit
 
 class ViewController: UIViewController {
-
- 
+    
+    
     @IBOutlet var msTestView: ActionRowView!
     @IBOutlet var textTestView: ActionRowView!
     @IBOutlet var colorTestView: ActionRowView!
@@ -24,8 +24,11 @@ class ViewController: UIViewController {
     @IBOutlet var aspectRatioLabel: UILabel!
     @IBOutlet var screenDestinyLabel: UILabel!
     
+    @IBOutlet var topStackViewConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         msTestView.setupUI(imageName: "msTest", title: "MS Test", subTitle: "Testing the display response.")
         textTestView.setupUI(imageName: "textTest", title: "Text test", subTitle: "Testing the display of text on the display")
         colorTestView.setupUI(imageName: "colorTest", title: "Color test", subTitle: "Testing the display of colors on the display")
@@ -53,10 +56,22 @@ class ViewController: UIViewController {
         }
         introductionView.completion = {
             self.performSegue(withIdentifier: "IntroViewController", sender: self)
-            }
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let screenHeight = UIScreen.main.bounds.height
+        print(screenHeight)
+        
+        if screenHeight < 700 {
+            topStackViewConstraint.constant = 50
+            self.view.layoutIfNeeded()
+        }
+    }
+}
+
     
 
 

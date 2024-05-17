@@ -18,9 +18,12 @@ class MyCollectionViewCell: UICollectionViewCell {
                                                                    UIColor(hexString: "#00D4FD"),
                                                                    UIColor(hexString: "#22BC26"),
                                                                    UIColor(hexString: "#F5FE03"),
-                                                                   UIColor(hexString: "#FD0102")])
+                                                                   UIColor(hexString: "#FD0102")],
+                                    cornerRadius: 6)
         } else {
+            colorView.layer.cornerRadius = 6
             colorView.backgroundColor = UIColor(hexString: colorHex)
         }
     }
+
 }

@@ -144,26 +144,30 @@ extension UIColor {
     }
 }
 
-
 extension UIView {
 
-    func applyGradient(isVertical: Bool, colorArray: [UIColor]) {
+    func applyGradient(isVertical: Bool, colorArray: [UIColor], cornerRadius: CGFloat) {
+        // Remove existing gradient layers
         layer.sublayers?.filter({ $0 is CAGradientLayer }).forEach({ $0.removeFromSuperlayer() })
-         
+
+        // Create gradient layer
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = colorArray.map({ $0.cgColor })
         if isVertical {
-            //top to bottom
-            gradientLayer.locations = [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
+            // Top to bottom
+            gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
+            gradientLayer.endPoint = CGPoint(x: 0.0, y: 1.0)
         } else {
-            //left to right
+            // Left to right
             gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
             gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
         }
-        
-        backgroundColor = .clear
-        gradientLayer.frame = bounds
-        layer.insertSublayer(gradientLayer, at: 0)
-    }
 
+        gradientLayer.frame = bounds
+        gradientLayer.cornerRadius = cornerRadius
+        layer.insertSublayer(gradientLayer, at: 0)
+        layer.cornerRadius = cornerRadius
+        layer.masksToBounds = true
+    }
 }
+
