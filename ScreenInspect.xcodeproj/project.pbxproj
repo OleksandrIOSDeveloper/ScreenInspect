@@ -21,7 +21,10 @@
 		DD71F52D2BED1BD300A01D79 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = DD71F52C2BED1BD300A01D79 /* DeviceKit */; };
 		DD71F52F2BED281100A01D79 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD71F52E2BED281100A01D79 /* Extension.swift */; };
 		DD71F5312BED2D8A00A01D79 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD71F5302BED2D8A00A01D79 /* IntroViewController.swift */; };
+		DD7292092BFC9F5B00AE89C6 /* PingTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7292082BFC9F5B00AE89C6 /* PingTestViewController.swift */; };
 		DD779C002BEE6060007D514C /* CustomGotItButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD779BFF2BEE6060007D514C /* CustomGotItButton.swift */; };
+		DDD8024A2BFBCFC30087DE28 /* PingTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDD802492BFBCFC30087DE28 /* PingTestView.xib */; };
+		DDD8024C2BFBD9470087DE28 /* PingTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8024B2BFBD9470087DE28 /* PingTestView.swift */; };
 		DDDDE2C02BF663FF001A3BFE /* DetailColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDE2BF2BF663FF001A3BFE /* DetailColorViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +44,10 @@
 		DD71F5272BECE98A00A01D79 /* ActionRowView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionRowView.xib; sourceTree = "<group>"; };
 		DD71F52E2BED281100A01D79 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		DD71F5302BED2D8A00A01D79 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		DD7292082BFC9F5B00AE89C6 /* PingTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingTestViewController.swift; sourceTree = "<group>"; };
 		DD779BFF2BEE6060007D514C /* CustomGotItButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGotItButton.swift; sourceTree = "<group>"; };
+		DDD802492BFBCFC30087DE28 /* PingTestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PingTestView.xib; sourceTree = "<group>"; };
+		DDD8024B2BFBD9470087DE28 /* PingTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingTestView.swift; sourceTree = "<group>"; };
 		DDDDE2BF2BF663FF001A3BFE /* DetailColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailColorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,10 +86,12 @@
 				DD18C1692BEBC00200E7B59B /* SceneDelegate.swift */,
 				DD18C1672BEBC00200E7B59B /* AppDelegate.swift */,
 				DD0085A42BEFA093000DFDEC /* MyCollectionViewCell.swift */,
-				DD71F5252BECE97500A01D79 /* ActionRowView.swift */,
 				DD71F52E2BED281100A01D79 /* Extension.swift */,
 				DD779BFF2BEE6060007D514C /* CustomGotItButton.swift */,
 				DD71F5272BECE98A00A01D79 /* ActionRowView.xib */,
+				DD71F5252BECE97500A01D79 /* ActionRowView.swift */,
+				DDD802492BFBCFC30087DE28 /* PingTestView.xib */,
+				DDD8024B2BFBD9470087DE28 /* PingTestView.swift */,
 				DD18C16D2BEBC00300E7B59B /* Main.storyboard */,
 				DD18C1702BEBC00400E7B59B /* Assets.xcassets */,
 				DD18C1722BEBC00400E7B59B /* LaunchScreen.storyboard */,
@@ -100,6 +108,7 @@
 				DD1000EE2BED5A8D00EBEBF9 /* TextTestViewController.swift */,
 				DD0085A22BEF7E3A000DFDEC /* ColorTestViewController.swift */,
 				DDDDE2BF2BF663FF001A3BFE /* DetailColorViewController.swift */,
+				DD7292082BFC9F5B00AE89C6 /* PingTestViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -168,6 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDD8024A2BFBCFC30087DE28 /* PingTestView.xib in Resources */,
 				DD18C1742BEBC00400E7B59B /* LaunchScreen.storyboard in Resources */,
 				DD18C1712BEBC00400E7B59B /* Assets.xcassets in Resources */,
 				DD18C16F2BEBC00300E7B59B /* Main.storyboard in Resources */,
@@ -183,12 +193,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD0085A32BEF7E3A000DFDEC /* ColorTestViewController.swift in Sources */,
+				DDD8024C2BFBD9470087DE28 /* PingTestView.swift in Sources */,
 				DD779C002BEE6060007D514C /* CustomGotItButton.swift in Sources */,
 				DD71F52F2BED281100A01D79 /* Extension.swift in Sources */,
 				DD18C16C2BEBC00200E7B59B /* ViewController.swift in Sources */,
 				DD18C1682BEBC00200E7B59B /* AppDelegate.swift in Sources */,
 				DDDDE2C02BF663FF001A3BFE /* DetailColorViewController.swift in Sources */,
 				DD71F5312BED2D8A00A01D79 /* IntroViewController.swift in Sources */,
+				DD7292092BFC9F5B00AE89C6 /* PingTestViewController.swift in Sources */,
 				DD0085A52BEFA093000DFDEC /* MyCollectionViewCell.swift in Sources */,
 				DD18C16A2BEBC00200E7B59B /* SceneDelegate.swift in Sources */,
 				DD71F5262BECE97500A01D79 /* ActionRowView.swift in Sources */,

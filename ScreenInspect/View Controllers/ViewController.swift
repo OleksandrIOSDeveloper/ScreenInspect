@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         screenDestinyLabel.text = "\(ppi) ppi"
         
         msTestView.completion = {
-            print("1111")
+            self.performSegue(withIdentifier: "PingTestViewController", sender: self)
         }
         textTestView.completion = {
             self.performSegue(withIdentifier: "TextTestViewController", sender: self)

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PingTestView" customModule="ScreenInspect" customModuleProvider="target">
+            <connections>
+                <outlet property="colorBacgkgroundView" destination="iN0-l3-epB" id="MSM-qh-9w3"/>
+                <outlet property="pingLabel" destination="eN2-h2-HZ1" id="R2B-pF-Gpf"/>
+                <outlet property="squarePingvView" destination="w7p-S4-7CY" id="wHW-Fg-ZcP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="777"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w7p-S4-7CY">
+                    <rect key="frame" x="15" y="89" width="70" height="70"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="w7p-S4-7CY" secondAttribute="height" multiplier="1:1" id="udY-Ut-WTw"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eN2-h2-HZ1">
+                    <rect key="frame" x="5" y="59" width="90" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="ecN-PW-JVB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="eN2-h2-HZ1" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.9" id="F2a-R3-xEf"/>
+                <constraint firstItem="eN2-h2-HZ1" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Gzq-x5-7pt"/>
+                <constraint firstItem="w7p-S4-7CY" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.7" id="KGs-tz-QaI"/>
+                <constraint firstItem="w7p-S4-7CY" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="ZGn-gb-fhp"/>
+                <constraint firstItem="eN2-h2-HZ1" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="yoE-87-Ng1"/>
+                <constraint firstItem="w7p-S4-7CY" firstAttribute="top" secondItem="eN2-h2-HZ1" secondAttribute="bottom" constant="10" id="yot-Te-CNz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-106.87022900763358" y="30.633802816901412"/>
+        </view>
+    </objects>
+</document>
