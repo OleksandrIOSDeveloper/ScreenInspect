@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MenuViewController.swift
 //  ScreenInspect
 //
 //  Created by Александр Родителев on 08.05.2024.
@@ -8,8 +8,7 @@
 import UIKit
 import DeviceKit
 
-class ViewController: UIViewController {
-    
+class MenuViewController: UIViewController {
     
     @IBOutlet var msTestView: ActionRowView!
     @IBOutlet var textTestView: ActionRowView!
@@ -61,10 +60,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
         let screenHeight = UIScreen.main.bounds.height
-        print(screenHeight)
-        
         if screenHeight < 700 {
             topStackViewConstraint.constant = 50
             self.view.layoutIfNeeded()

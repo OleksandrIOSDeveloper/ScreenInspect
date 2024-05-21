@@ -11,7 +11,7 @@
             <connections>
                 <outlet property="colorBacgkgroundView" destination="iN0-l3-epB" id="MSM-qh-9w3"/>
                 <outlet property="pingLabel" destination="eN2-h2-HZ1" id="R2B-pF-Gpf"/>
-                <outlet property="squarePingvView" destination="w7p-S4-7CY" id="wHW-Fg-ZcP"/>
+                <outlet property="squarePingView" destination="w7p-S4-7CY" id="wHW-Fg-ZcP"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

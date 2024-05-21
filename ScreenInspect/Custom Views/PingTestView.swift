@@ -11,7 +11,7 @@ class PingTestView: UIView {
     
     @IBOutlet var colorBacgkgroundView: UIView!
     @IBOutlet var pingLabel: UILabel!
-    @IBOutlet var squarePingvView: UIView!
+    @IBOutlet var squarePingView: UIView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -44,19 +44,19 @@ class PingTestView: UIView {
     
     func animateSquarePingViewPosition(ping: Int) {
         let safeAreaBottom = safeAreaLayoutGuide.layoutFrame.maxY
-        let finalPositionY = safeAreaBottom - self.squarePingvView.frame.height
-        let initialPositionY = squarePingvView.frame.origin.y
+        let finalPositionY = safeAreaBottom - self.squarePingView.frame.height
+        let initialPositionY = squarePingView.frame.origin.y
         let duration = Double(ping) / 1000.0
         
-        self.squarePingvView.frame.origin.y = initialPositionY
+        self.squarePingView.frame.origin.y = initialPositionY
         
         UIView.animate(withDuration: duration, animations: {
-            self.squarePingvView.frame.origin.y = finalPositionY
+            self.squarePingView.frame.origin.y = finalPositionY
             self.layoutIfNeeded()
         }) { _ in
-            self.squarePingvView.isHidden = true
-            self.squarePingvView.frame.origin.y = initialPositionY
-            self.squarePingvView.isHidden = false
+            self.squarePingView.isHidden = true
+            self.squarePingView.frame.origin.y = initialPositionY
+            self.squarePingView.isHidden = false
             self.animateSquarePingViewPosition(ping: ping)
         }
     }
