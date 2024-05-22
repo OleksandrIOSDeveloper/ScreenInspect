@@ -86,9 +86,9 @@
 		DD18C1662BEBC00200E7B59B /* ScreenInspect */ = {
 			isa = PBXGroup;
 			children = (
+				DD742A492BF7EF0700FA7D14 /* View Controllers */,
 				DD266A8B2BFD2B97003B2E0A /* Custom Views */,
 				DD266A842BFD211E003B2E0A /* Extensions */,
-				DD742A492BF7EF0700FA7D14 /* View Controllers */,
 				DD18C1692BEBC00200E7B59B /* SceneDelegate.swift */,
 				DD18C1672BEBC00200E7B59B /* AppDelegate.swift */,
 				DD18C16D2BEBC00300E7B59B /* Main.storyboard */,

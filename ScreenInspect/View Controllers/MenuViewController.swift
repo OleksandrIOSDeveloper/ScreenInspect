@@ -19,15 +19,17 @@ class MenuViewController: UIViewController {
     @IBOutlet var versionIOSLabel: UILabel!
     @IBOutlet var screenSizeLabel: UILabel!
     @IBOutlet var resolutionPixelLabel: UILabel!
-    @IBOutlet var refreshRateLabel: UILabel!
+    @IBOutlet var brightnessLabel: UILabel!
     @IBOutlet var aspectRatioLabel: UILabel!
     @IBOutlet var screenDestinyLabel: UILabel!
-    
+    @IBOutlet var batteryLevelLabel: UILabel!
+   
     @IBOutlet var topStackViewConstraint: NSLayoutConstraint!
+    
+    var updateTimer: Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         msTestView.setupUI(imageName: "msTest", title: "MS Test", subTitle: "Testing the display response.")
         textTestView.setupUI(imageName: "textTest", title: "Text test", subTitle: "Testing the display of text on the display")
         colorTestView.setupUI(imageName: "colorTest", title: "Color test", subTitle: "Testing the display of colors on the display")
@@ -36,7 +38,6 @@ class MenuViewController: UIViewController {
         versionIOSLabel.text = UIDevice.current.systemVersion
         screenSizeLabel.text = "\(String(describing: Device.current.diagonal)) inches"
         resolutionPixelLabel.text = "\(Int(UIScreen.main.nativeBounds.size.width))x\(Int(UIScreen.main.nativeBounds.size.height)) px"
-        refreshRateLabel.text = "\(String(describing: Device.current.screenBrightness))%"
         aspectRatioLabel.text = String(describing: Device.current.screenRatio)
         guard let ppi = Device.current.ppi else {
             screenDestinyLabel.text = "Unknown ppi"
@@ -56,7 +57,14 @@ class MenuViewController: UIViewController {
         introductionView.completion = {
             self.performSegue(withIdentifier: "IntroViewController", sender: self)
         }
+              updateTimer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(updateLabels), userInfo: nil, repeats: true)
+              updateLabels()
     }
+    
+    @objc func updateLabels() {
+          batteryLevelLabel.text = "\(String(describing: Device.current.batteryLevel!))%"
+          brightnessLabel.text = "\(String(describing: Device.current.screenBrightness))%"
+      }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -66,6 +74,11 @@ class MenuViewController: UIViewController {
             self.view.layoutIfNeeded()
         }
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+         super.viewWillDisappear(animated)
+         updateTimer?.invalidate()
+     }
 }
 
     
