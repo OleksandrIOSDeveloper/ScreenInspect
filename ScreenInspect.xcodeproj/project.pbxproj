@@ -25,6 +25,7 @@
 		DD71F5312BED2D8A00A01D79 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD71F5302BED2D8A00A01D79 /* IntroViewController.swift */; };
 		DD7292092BFC9F5B00AE89C6 /* PingTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7292082BFC9F5B00AE89C6 /* PingTestViewController.swift */; };
 		DD779C002BEE6060007D514C /* CustomGotItButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD779BFF2BEE6060007D514C /* CustomGotItButton.swift */; };
+		DD779F5B2C0122BC00CF1120 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD779F5D2C0122BC00CF1120 /* Localizable.strings */; };
 		DDD8024A2BFBCFC30087DE28 /* PingTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDD802492BFBCFC30087DE28 /* PingTestView.xib */; };
 		DDD8024C2BFBD9470087DE28 /* PingTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8024B2BFBD9470087DE28 /* PingTestView.swift */; };
 		DDDDE2C02BF663FF001A3BFE /* DetailColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDE2BF2BF663FF001A3BFE /* DetailColorViewController.swift */; };
@@ -50,6 +51,8 @@
 		DD71F5302BED2D8A00A01D79 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		DD7292082BFC9F5B00AE89C6 /* PingTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingTestViewController.swift; sourceTree = "<group>"; };
 		DD779BFF2BEE6060007D514C /* CustomGotItButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGotItButton.swift; sourceTree = "<group>"; };
+		DD779F5C2C0122BC00CF1120 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DD779F5E2C01230300CF1120 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DDD802492BFBCFC30087DE28 /* PingTestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PingTestView.xib; sourceTree = "<group>"; };
 		DDD8024B2BFBD9470087DE28 /* PingTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingTestView.swift; sourceTree = "<group>"; };
 		DDDDE2BF2BF663FF001A3BFE /* DetailColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailColorViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				DD18C16B2BEBC00200E7B59B /* MenuViewController.swift */,
+				DD779F5D2C0122BC00CF1120 /* Localizable.strings */,
 				DD71F5302BED2D8A00A01D79 /* IntroViewController.swift */,
 				DD1000EE2BED5A8D00EBEBF9 /* TextTestViewController.swift */,
 				DD0085A22BEF7E3A000DFDEC /* ColorTestViewController.swift */,
@@ -180,6 +184,7 @@
 			knownRegions = (
 				en,
 				Base,
+				uk,
 			);
 			mainGroup = DD18C15B2BEBC00200E7B59B;
 			packageReferences = (
@@ -200,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDD8024A2BFBCFC30087DE28 /* PingTestView.xib in Resources */,
+				DD779F5B2C0122BC00CF1120 /* Localizable.strings in Resources */,
 				DD18C1742BEBC00400E7B59B /* LaunchScreen.storyboard in Resources */,
 				DD18C1712BEBC00400E7B59B /* Assets.xcassets in Resources */,
 				DD18C16F2BEBC00300E7B59B /* Main.storyboard in Resources */,
@@ -251,6 +257,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		DD779F5D2C0122BC00CF1120 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD779F5C2C0122BC00CF1120 /* en */,
+				DD779F5E2C01230300CF1120 /* uk */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -259,6 +274,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -322,6 +338,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -384,10 +401,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScreenInspect/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -412,10 +428,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScreenInspect/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

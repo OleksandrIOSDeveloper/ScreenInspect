@@ -57,14 +57,22 @@ class MenuViewController: UIViewController {
         introductionView.completion = {
             self.performSegue(withIdentifier: "IntroViewController", sender: self)
         }
-              updateTimer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(updateLabels), userInfo: nil, repeats: true)
-              updateLabels()
     }
     
     @objc func updateLabels() {
-          batteryLevelLabel.text = "\(String(describing: Device.current.batteryLevel!))%"
+        guard let levelBattery = Device.current.batteryLevel else {
+            batteryLevelLabel.text = "---"
+            return
+        }
+          batteryLevelLabel.text = "\(String(describing:levelBattery))%"
           brightnessLabel.text = "\(String(describing: Device.current.screenBrightness))%"
       }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateTimer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(updateLabels), userInfo: nil, repeats: true)
+        updateLabels()
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

@@ -24,6 +24,5 @@ class CustomGotItButton: UIButton {
         setTitle("Got it", for: .normal)
         setTitleColor(.white, for: .highlighted)
     }
-    
 }
 

@@ -191,7 +191,7 @@
                         <outlet property="textTestView" destination="53e-iN-ghQ" id="xRJ-OH-Nod"/>
                         <outlet property="topStackViewConstraint" destination="ope-Ji-F66" id="Kru-vQ-qP9"/>
                         <outlet property="versionIOSLabel" destination="pwh-kq-RmM" id="dZW-UO-VIF"/>
-                        <segue destination="tkU-Sc-O7w" kind="presentation" identifier="IntroViewController" modalPresentationStyle="overFullScreen" id="kdr-EJ-dBL"/>
+                        <segue destination="tkU-Sc-O7w" kind="presentation" identifier="IntroViewController" modalPresentationStyle="fullScreen" id="kdr-EJ-dBL"/>
                         <segue destination="VPZ-JQ-VQc" kind="presentation" identifier="TextTestViewController" modalPresentationStyle="fullScreen" id="Ha7-e6-rh1"/>
                         <segue destination="Ma7-wU-Wkn" kind="presentation" identifier="ColorTestViewController" modalPresentationStyle="fullScreen" id="bGC-EY-lXM"/>
                         <segue destination="CDF-Io-VHD" kind="presentation" identifier="PingTestViewController" modalPresentationStyle="fullScreen" id="SbZ-oH-haZ"/>
