@@ -31,7 +31,7 @@ class PingTestView: UIView {
     }
     
     func setupUIView(ping:Int, isLightBlueBackground:Bool ) {
-        pingLabel.text = "\(ping) ms"
+        pingLabel.text = String(format: NSLocalizedString("%d ms", comment: ""), ping)
         if isLightBlueBackground {
             colorBacgkgroundView.backgroundColor = UIColor(hexString: "#092351")
         } else {

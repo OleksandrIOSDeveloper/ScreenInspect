@@ -21,7 +21,7 @@ class CustomGotItButton: UIButton {
         layer.cornerRadius = 8
         titleLabel?.font = UIFont.systemFont(ofSize: 12, weight: .bold)
         setTitleColor(.white, for: .normal)
-        setTitle("Got it", for: .normal)
+        setTitle(NSLocalizedString("Got it", comment: ""), for: .normal)
         setTitleColor(.white, for: .highlighted)
     }
 }
