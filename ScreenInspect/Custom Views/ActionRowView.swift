@@ -2,7 +2,7 @@
 //  ActionRowView.swift
 //  ScreenInspect
 //
-//  Created by Александр Родителев on 09.05.2024.
+//  Created by Oleksandr Roditieliev on 09.05.2024.
 //
 
 import UIKit
@@ -15,7 +15,7 @@ class ActionRowView: UIView {
     @IBOutlet var subTitleLabel: UILabel!
     
     var completion: () -> Void = {}
-   
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()

@@ -2,7 +2,7 @@
 //  ColorTestViewController.swift
 //  ScreenInspect
 //
-//  Created by Александр Родителев on 11.05.2024.
+//  Created by Oleksandr Roditieliev on 11.05.2024.
 //
 
 import UIKit
@@ -11,8 +11,8 @@ class ColorTestViewController: UIViewController, UICollectionViewDataSource, UIC
     
     @IBOutlet var backLabel: UILabel!
     
-    var arrayColorsHex = ["#FF0000", "#00FF01", "#0000FE", "#FFFF01", "#01FFFF", "#FF00FE", "#010101", "#FFFFFF", "gradient"]
-    let reuseIdentifier = "cell"
+    var arrayColorsHex = [ColorConstants.redColor, ColorConstants.greenColor, ColorConstants.blueColor, ColorConstants.yellowColor, ColorConstants.cyanColor, ColorConstants.magentaColor, ColorConstants.blackColor, ColorConstants.whiteColor, "gradient"]
+    let reuseIdentifier = "colorCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()

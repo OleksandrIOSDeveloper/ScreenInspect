@@ -27,6 +27,7 @@
 		DD7292092BFC9F5B00AE89C6 /* PingTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7292082BFC9F5B00AE89C6 /* PingTestViewController.swift */; };
 		DD779C002BEE6060007D514C /* CustomGotItButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD779BFF2BEE6060007D514C /* CustomGotItButton.swift */; };
 		DD779F5B2C0122BC00CF1120 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD779F5D2C0122BC00CF1120 /* Localizable.strings */; };
+		DDB04DBA2CBEF78C0021B724 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB04DB92CBEF78C0021B724 /* ColorConstants.swift */; };
 		DDD8024A2BFBCFC30087DE28 /* PingTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDD802492BFBCFC30087DE28 /* PingTestView.xib */; };
 		DDD8024C2BFBD9470087DE28 /* PingTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8024B2BFBD9470087DE28 /* PingTestView.swift */; };
 		DDDDE2C02BF663FF001A3BFE /* DetailColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDE2BF2BF663FF001A3BFE /* DetailColorViewController.swift */; };
@@ -55,6 +56,7 @@
 		DD779BFF2BEE6060007D514C /* CustomGotItButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGotItButton.swift; sourceTree = "<group>"; };
 		DD779F5C2C0122BC00CF1120 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DD779F5E2C01230300CF1120 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DDB04DB92CBEF78C0021B724 /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		DDD802492BFBCFC30087DE28 /* PingTestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PingTestView.xib; sourceTree = "<group>"; };
 		DDD8024B2BFBD9470087DE28 /* PingTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingTestView.swift; sourceTree = "<group>"; };
 		DDDDE2BF2BF663FF001A3BFE /* DetailColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailColorViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				DD779F5D2C0122BC00CF1120 /* Localizable.strings */,
 				DD18C1692BEBC00200E7B59B /* SceneDelegate.swift */,
 				DD18C1672BEBC00200E7B59B /* AppDelegate.swift */,
+				DDB04DB92CBEF78C0021B724 /* ColorConstants.swift */,
 				DD18C16D2BEBC00300E7B59B /* Main.storyboard */,
 				DD18C1702BEBC00400E7B59B /* Assets.xcassets */,
 				DD18C1722BEBC00400E7B59B /* LaunchScreen.storyboard */,
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD0085A32BEF7E3A000DFDEC /* ColorTestViewController.swift in Sources */,
+				DDB04DBA2CBEF78C0021B724 /* ColorConstants.swift in Sources */,
 				DDD8024C2BFBD9470087DE28 /* PingTestView.swift in Sources */,
 				DD266A862BFD2163003B2E0A /* ExtensionUIView.swift in Sources */,
 				DD779C002BEE6060007D514C /* CustomGotItButton.swift in Sources */,

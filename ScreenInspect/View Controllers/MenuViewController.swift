@@ -2,7 +2,7 @@
 //  MenuViewController.swift
 //  ScreenInspect
 //
-//  Created by Александр Родителев on 08.05.2024.
+//  Created by Oleksandr Roditieliev on 08.05.2024.
 //
 
 import UIKit
@@ -36,7 +36,8 @@ class MenuViewController: UIViewController {
     
     @IBOutlet var topStackViewConstraint: NSLayoutConstraint!
     
-    var updateTimer: Timer?
+    private var updateTimer: Timer?
+    private var timeInterval = 5.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -104,7 +105,7 @@ class MenuViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        updateTimer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(updateLabels), userInfo: nil, repeats: true)
+        updateTimer = Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(updateLabels), userInfo: nil, repeats: true)
         updateLabels()
     }
     
@@ -141,10 +142,8 @@ class MenuViewController: UIViewController {
     }
     
     func setLanguage(languageCode: String) {
-        // Зберігаємо обрану мову в UserDefaults
         UserDefaults.standard.set(languageCode, forKey: "selectedLanguage")
         UserDefaults.standard.synchronize()
-        // Оновлюємо інтерфейс згідно обраної мови
         Bundle.setLanguage(languageCode)
         setupUI()
     }

@@ -2,7 +2,7 @@
 //  PingTestView.swift
 //  ScreenInspect
 //
-//  Created by Александр Родителев on 20.05.2024.
+//  Created by Oleksandr Roditieliev on 20.05.2024.
 //
 
 import UIKit
@@ -33,9 +33,9 @@ class PingTestView: UIView {
     func setupUIView(ping:Int, isLightBlueBackground:Bool ) {
         pingLabel.text = String(format: NSLocalizedString("%d ms", comment: ""), ping)
         if isLightBlueBackground {
-            colorBacgkgroundView.backgroundColor = UIColor(hexString: "#092351")
+            colorBacgkgroundView.backgroundColor = UIColor(hexString: ColorConstants.lightBlueColor)
         } else {
-            colorBacgkgroundView.backgroundColor = UIColor(hexString: "#0B2148")
+            colorBacgkgroundView.backgroundColor = UIColor(hexString: ColorConstants.darkBlueColor)
         }
         DispatchQueue .main.asyncAfter(deadline: .now() +  0.5 ) {
             self.animateSquarePingViewPosition(ping: ping)

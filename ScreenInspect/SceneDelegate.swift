@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  ScreenInspect
 //
-//  Created by Александр Родителев on 08.05.2024.
+//  Created by Oleksandr Roditieliev on 08.05.2024.
 //
 
 import UIKit

@@ -2,7 +2,7 @@
 //  TextTestViewController.swift
 //  ScreenInspect
 //
-//  Created by Александр Родителев on 09.05.2024.
+//  Created by Oleksandr Roditieliev on 09.05.2024.
 //
 
 import UIKit

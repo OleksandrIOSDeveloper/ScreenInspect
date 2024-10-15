@@ -2,7 +2,7 @@
 //  ExtensionUIColor.swift
 //  ScreenInspect
 //
-//  Created by Александр Родителев on 21.05.2024.
+//  Created by Oleksandr Roditieliev on 21.05.2024.
 //
 
 import Foundation
@@ -14,6 +14,7 @@ extension UIColor {
         var int = UInt64()
         Scanner(string: hex).scanHexInt64(&int)
         let a, r, g, b: UInt64
+        
         switch hex.count {
         case 3: // RGB (12-bit)
             (a, r, g, b) = (255, (int >> 8) * 17, (int >> 4 & 0xF) * 17, (int & 0xF) * 17)
