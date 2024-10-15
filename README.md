@@ -1,6 +1,6 @@
 # ScreenInspect
 
-![ScreenInspect](https://s6.ezgif.com/tmp/ezgif-6-60fa3db645.gif)
+![ScreenInspect](https://api.monosnap.com/file/download?id=rH97cuoeR3wRqYmoMWiAD4il01B1TA)
 
 Our app is the simplest way to check if you have any dead pixels on your screen. Our dead pixel test app is an easy and convenient way for you to check if your screen has dead pixels. Our test will display various colors and patterns on your screen, allowing you to identify any dead pixels that may be present.
 
@@ -25,6 +25,6 @@ How to use:
 ## Overview
 | Main screen | Introduction app | Localization  |
 |:---------:|:---------:|:---------:|
-|<img src="https://s6.ezgif.com/tmp/ezgif-6-934fb7ff2f.gif" width="300"> | <img src="https://s6.ezgif.com/tmp/ezgif-6-f41d4249b8.gif" width="300"> | <img src="https://s6.ezgif.com/tmp/ezgif-6-871f65a40f.gif" width="300"> |
+|<img src="https://api.monosnap.com/file/download?id=SC3qiuIYkNfQvPssZMyQK6vKvMWi2V"> | <img src="https://api.monosnap.com/file/download?id=7eJokQdUYmfXM3yGIa7aIRgBwEl9Tj"> | <img src="https://api.monosnap.com/file/download?id=cei3Z57YKRKu31ObLP1SOehq1Gr15n"> |
 | Ping test | Text test | Color test |
-|<img src="https://s6.ezgif.com/tmp/ezgif-6-b8108e19df.gif" width="300"> | <img src="https://s6.ezgif.com/tmp/ezgif-6-03cf5a4bae.gif" width="300"> | <img src="https://s6.ezgif.com/tmp/ezgif-6-bd95b08082.gif" width="300"> |
+|<img src="https://api.monosnap.com/file/download?id=kRiwiMzLf8Xbt189w3fmFRl2pNlKWE"> | <img src="https://api.monosnap.com/file/download?id=3uL41jSUfVWtxbhqsJkfonybzwXhyO"> | <img src="https://api.monosnap.com/file/download?id=E0CaXyFtUTwsIE3UTPOi2oNPGcGJU7"> |
