@@ -25,6 +25,6 @@ How to use:
 ## Overview
 | Main screen | Introduction app | Localization  |
 |:---------:|:---------:|:---------:|
-|<img src="https://api.monosnap.com/file/download?id=SC3qiuIYkNfQvPssZMyQK6vKvMWi2V"> | <img src="https://api.monosnap.com/file/download?id=7eJokQdUYmfXM3yGIa7aIRgBwEl9Tj"> | <img src="https://api.monosnap.com/file/download?id=cei3Z57YKRKu31ObLP1SOehq1Gr15n"> |
+|<img src="https://api.monosnap.com/file/download?id=SC3qiuIYkNfQvPssZMyQK6vKvMWi2V" width="200"> | <img src="https://api.monosnap.com/file/download?id=7eJokQdUYmfXM3yGIa7aIRgBwEl9Tj" width="200"> | <img src="https://api.monosnap.com/file/download?id=cei3Z57YKRKu31ObLP1SOehq1Gr15n" width="200"> |
 | Ping test | Text test | Color test |
-|<img src="https://api.monosnap.com/file/download?id=kRiwiMzLf8Xbt189w3fmFRl2pNlKWE"> | <img src="https://api.monosnap.com/file/download?id=3uL41jSUfVWtxbhqsJkfonybzwXhyO"> | <img src="https://api.monosnap.com/file/download?id=E0CaXyFtUTwsIE3UTPOi2oNPGcGJU7"> |
+|<img src="https://api.monosnap.com/file/download?id=kRiwiMzLf8Xbt189w3fmFRl2pNlKWE" width="200"> | <img src="https://api.monosnap.com/file/download?id=3uL41jSUfVWtxbhqsJkfonybzwXhyO" width="200"> | <img src="https://api.monosnap.com/file/download?id=E0CaXyFtUTwsIE3UTPOi2oNPGcGJU7" width="200"> |
